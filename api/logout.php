@@ -3,7 +3,7 @@
 if(!empty($_POST['email']) && !empty($_POST['apiKey'])){
     $email = $_POST['email'];
     $apiKey = $_POST['apiKey'];
-    $con = mysqli_connect("localhost", "root", "", "php_api");
+    $con = mysqli_connect("localhost", "username", "password", "database_name");
     if ($con){
         $sql = "SELECT * FROM users WHERE email = '$email' AND apiKey = '$apiKey'";
         $res = mysqli_query($con, $sql);

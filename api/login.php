@@ -4,8 +4,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
     $result = array();
-    // $con = mysqli_connect("localhost", "root", "", "php_api");
-    $con = mysqli_connect("sql210.infinityfree.com","if0_34744587","Fnv1SoYf6dp","if0_34744587_api");
+    $con = mysqli_connect("localhost", "username", "password", "database_name");
     if ($con){
         $sql = "SELECT * FROM users WHERE email = '$email'";
         $res = mysqli_query($con, $sql);

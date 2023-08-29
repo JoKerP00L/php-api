@@ -13,7 +13,7 @@ class DataBaseConfig
         $this->servername = 'localhost';
         $this->username = 'root';
         $this->password = '';
-        $this->databasename = 'php_api';
+        $this->databasename = 'database_name';
 
     }
 }

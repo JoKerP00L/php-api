@@ -1,6 +1,6 @@
 <?php
 if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password'])) {
-    $con = mysqli_connect("localhost", "root", "", "php_api");
+    $con = mysqli_connect("localhost", "username", "password", "database_name");
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
